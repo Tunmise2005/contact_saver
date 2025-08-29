@@ -8,13 +8,13 @@ csv_file = workspace / "contacts.csv"
 
 while True:
    
-    name = input("Enter participant name: ")
-     
-    age = int(input("Enter participant age: "))
+    name = input("Enter your name: ")
+
+    age = int(input("Enter your age: "))
     
-    phone = input("Enter participant phone: ")
+    phone_number = input("Enter your phone number: ")
     while len(phone) != 11:
-        print("Phone number not complete")
+        print("Phone number not complete!")
         phone = input("Enter participant phone: ")
 
     track = input("Enter participant track: ")
@@ -22,7 +22,7 @@ while True:
     participant = {
         "Name": name,
         "Age": age,
-        "Phone": phone,
+        "Phone number": phone_number,
         "Track": track
     }
 
@@ -31,7 +31,7 @@ while True:
     print(f"Saved: {participant}")
 
     
-    more = input("Add another participant? (y/n): ").lower()
+    more = input("want to add another participant? (y/n): ").lower()
     if more != "y":
         break
 
