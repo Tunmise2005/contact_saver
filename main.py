@@ -9,17 +9,14 @@ csv_file = workspace / "contacts.csv"
 while True:
    
     name = input("Enter participant name: ")
-    
-    
+     
     age = int(input("Enter participant age: "))
     
-
     phone = input("Enter participant phone: ")
     while len(phone) != 11:
         print("Phone number not complete")
         phone = input("Enter participant phone: ")
 
-    
     track = input("Enter participant track: ")
     
     participant = {
